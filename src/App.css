@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  margin: 32px auto;
+  width: 900px;
+  border: 1px solid grey
+}
+
+.row {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content
+}
+
+.scoreList {
+  display: flex;
+}
+
+.score {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 100%;
+  margin-left: 12px
+}
+
+.score.active {
+  background-color: yellow;
+}
+
+.editBtn {
+  appearance: none; 
+  background-color: transparent; 
+  border-color: transparent purple; 
+  width: 0px; height: 0px; 
+  border-top-width: 1rem; 
+  border-top-style: solid; 
+  border-bottom-width: 1rem; 
+  border-bottom-style: solid; 
+  border-left-width: 1.6rem; 
+  border-left-style: solid; 
+  color: rgb(255, 255, 255); 
+  cursor: pointer;
+  margin-left: 12px
+}
