@@ -3,12 +3,26 @@ import { Link } from "react-router-dom";
 import Score from "./score";
 
 
-const ScoreList = (props) => {
-    const dayList = props.day
-
-    return (
+class ScoreList extends React.Component {
+    
+    
+    constructor(props){
+      const array = [0, 0, 0, 0, 0]
+      const newArray = array.map((array_item) => {
+        return array_item + Math.floor(Math.random() * 6);
+      });
+      super(props);
+  
+      this.state = {
+        day: ['월','화','수','목','금','토','일'],
+        score: newArray,
+      };
+    }
+  
+    render() {
+        return (
         <div>
-            {dayList.map((day, index) => {
+            {this.state.day.map((day, index) => {
                 return (
                     <div className="row">
                         <p>{day}</p>
@@ -18,7 +32,10 @@ const ScoreList = (props) => {
                 )
             })}
         </div>
-    )
-}
+      );
+    }
+  }
+
+
 
 export default ScoreList;

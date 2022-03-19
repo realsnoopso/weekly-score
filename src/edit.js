@@ -17,7 +17,9 @@ const edit = (props) => {
                 <div className='score'></div>
                 <div className='score'></div>
             </div>
-            <Link to="/"><button onClick={submit}>평점 남기기</button></Link>
+            <Link to="/">
+                <button onClick={submit}>평점 남기기</button>
+            </Link>
             
         </div>
     )
