@@ -18,20 +18,25 @@
 .score {
   width: 40px;
   height: 40px;
-  background-color: grey;
+  background-color: rgba(0,0,0,0.1);
   border-radius: 100%;
   margin-left: 12px
 }
 
+.edit .score:hover {
+  cursor: pointer;
+}
+
 .score.active {
-  background-color: yellow;
+  background-color: rgb(56, 34, 255);
 }
 
 .editBtn {
   appearance: none; 
   background-color: transparent; 
-  border-color: transparent purple; 
-  width: 0px; height: 0px; 
+  border-color: transparent rgb(0, 0, 0, 0.7); 
+  width: 0px; 
+  height: 0px; 
   border-top-width: 1rem; 
   border-top-style: solid; 
   border-bottom-width: 1rem; 

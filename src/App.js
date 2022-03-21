@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Route path="/" exact component={home} />
-        <Route path="/edit" component={edit} />
+        <Route path="/edit/:day" component={edit} />
       </div>
     );
   }
